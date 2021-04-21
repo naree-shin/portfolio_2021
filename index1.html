@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="Description" content="해당 페이지 설명(45자내외)">
+	<meta name="Author" content="만든이">
+	<meta name="Keywords" content="키워드">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- <meta property="og:title" content="공유하기 사이트 이름">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="해당 url 주소">
+	<meta property="og:image" content="해당페이지 대표이미지">
+	<meta property="og:description" content="해당 페이지 설명(45자내외)"> -->
+	<link rel="canonical" href="대표URL"> 
+	<link rel="shortcut icon" href="snrLogo.ico">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<title>신나리</title>
+	<style type="text/css">
+		body { font-size: 14px; /*background: pink;*/ /*padding: 20px;*/width: 100%; height: 100vh; color: #555; font-family: 'Noto Sans KR', sans-serif; }
+		a { color: #555; }
+		div.wrap { /*background: yellow;*/ width: 100%; height: 100vh; padding: 1vh; box-sizing: border-box; }
+		div.wrap::after { content: ""; width: 100%; height: 100%; display: block; background-image: linear-gradient(90deg, white, #a7c5d6); position: fixed; top: 0; left: 0; z-index: -1; border: 1vh solid #fff; box-sizing: border-box; }
+		div.wrapIn { widows: 100%; height: 100%; }
+		div.side { width: 20%; height: 100%; float: left; border-right: 1px solid white; box-sizing: border-box; padding-top: 35vh; /*padding-left: 5%;*/ position: fixed; background: /*yellow*/; }
+		div.side > p { width: 50%; margin: 0 auto; }
+		div.side > p:nth-child(1) { font-size: 26px; border-bottom: 0px solid #555; /*padding-bottom: 10px;*/ }
+		div.side > p:nth-child(2) { letter-spacing: 24px; padding: 0 0 120px; }
+		div.side > p:nth-child(3) { font-size: 20px; }
+		div.side > p:nth-child(4) { font-size: 12px; line-height: 1; }
+		div.side > p:nth-child(4)::after { content: ""; display: block; width: 20px; height: 2px; background: #555; margin-top: 20px; }
+		div.side > p:nth-child(5) { font-size: 12px; padding-top: 10px;}
+
+		div.contents { width: 80%; height: 100%; float: right; }
+
+		div.contents > div { width: 100%; /*height: 100%;*/ }
+
+		div.main { position: relative; }
+		div.main > img { position: absolute; left: 50%; top: 50%; transform: translate(-130%,-100%);   -webkit-filter: drop-shadow(2px 2px 2px #999); filter: drop-shadow(2px 2px 2px #999); }
+		ul.menu { text-align: right; padding: 30px 50px; position: fixed; right: 0; }
+		ul.menu > li { display: inline-block; margin-left: 30px; }
+
+		div.main, div.Work, div.Contect { display: none; }
+		div.main.on { display: block; }
+		div.Work.on { display: block; width: 100%; /*height: 100%;*/ background: #fff; }
+		div.Works { padding: 100px 0; }
+		div.Work > div.Works > div { font-size: 20px; width: 80%; height: 250px;  margin: 0 auto 10px; }
+		/*div.Work div.dsm { margin: 25px auto; }*/
+		div.bg { width: 50%; height: 100%; float: left; }
+		div.ds div.bg { background: url("data/doosan_web.jpg") center no-repeat; background-size: cover; }
+		div.dsm div.bg { background: url("data/doosan_mobile.jpg") center no-repeat; background-size: cover; }
+		div.nf div.bg { background: url("data/netflix.jpg") center no-repeat; background-size: cover; }
+		div.txt { width: 50%; height: 100%; float: right; background: #eff4f7; }
+		div.txt > p:nth-child(1) { font-size: 18px; text-align: center; margin: 30px 0;}
+
+		div.Contect.on { display: block; background: white;}
+		div.ContectIn { position: absolute; left: 50%; top: 50%;  }
+		div.ContectIn > p:first-child::before { content: ""; display: inline-block; width: 25px; height: 25px; background: url("data/phone.png")no-repeat; background-size: 100%; vertical-align: middle; margin-right: 10px; }
+		div.ContectIn > p:last-child::before { content: ""; display: inline-block; width: 25px; height: 25px; background: url("data/mail.png")no-repeat; background-size: 100%; vertical-align: middle; margin-right: 10px; }
+		div.ContectIn > p { margin: 10px 0; }
+		div.ContectIn > p:first-child { letter-spacing: 1px; }
+
+		div.Tools { background: #f2f8f3; padding: 100px; }
+		div.Tools > ul { display: block; /*position: relative; left: 50%; top: 50%; transform: translate(-50%,-50%);*/ }
+		div.Tools > ul > li { display: inline-block; margin-right: 20px; margin-bottom: 15px; font-size: 12px; }
+		div.Tools > ul > li > img { margin-right: -5px; }
+		div.Tools > ul > li > p { margin-bottom: -30px;     margin-right: 10px; text-align: right; }
+		div.Tools > ul > li::before { content: ""; display: inline-block; width: 600px; height: 32px; border: 1px solid #787878; margin-bottom: -28px;  border-radius: 0 10px 10px 0; margin-left: 15px; box-sizing: border-box; }
+		li.ps::after { content: ""; display: inline-block; width: 450px; height: 32px; background: #787878; /*margin-left: -4px;*/ }
+		li.il::after { content: ""; display: inline-block; width: 500px; height: 32px; background: #787878; /*margin-left: -4px;*/ }
+		li.ht::after { content: ""; display: inline-block; width: 400px; height: 32px; background: #787878; /*margin-left: -4px;*/ }
+		li.cs::after { content: ""; display: inline-block; width: 400px; height: 32px; background: #787878; /*margin-left: -4px;*/ }
+		li.js::after { content: ""; display: inline-block; width: 200px; height: 32px; background: #787878; /*margin-left: -4px;*/ }
+
+
+	</style>
+	<script type="text/javascript">
+		$(function(){
+			$("*").css("border","1px solid blue");
+		});
+	</script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="wrapIn">
+			<a href="#">
+				<div class="side">
+					<p>Portfolio</p>
+					<p>2019</p>
+					<p>Shin Naree</p>
+					<p>[Shin Na-ree]</p>
+					<p>UI/UX/Web design/<br>Web publishing</p>
+				</div>
+			</a>
+			<div class="contents">
+				<ul class="menu">
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contect</a></li>
+					<li><a href="#">tools</a></li>
+				</ul>
+				<div class="main ">
+					<img src="snrLogo.png" width="120">
+				</div>
+				<div class="Work on">
+					<!-- <h1>Work</h1> -->
+					<div class="Works">
+						<div class="ds">
+							<a href="http://naree.dothome.co.kr/doosan/">
+								<div class="bg">
+								</div>
+								<div class="txt">
+									<p>Doosan Website renewal</p>
+								</div>
+							</a>
+						</div>
+						<div class="dsm">
+							<a href="http://naree.dothome.co.kr/doosanm/">
+								<div class="bg">
+									
+								</div>
+								<div class="txt">
+									<p>Doosan Mobile Website renewal</p>
+								</div>
+							</a>
+						</div>
+						<div class="nf">
+							<a href="http://naree.dothome.co.kr/netflix/">
+								<div class="bg">
+									
+								</div>
+								<div class="txt">
+									<p>Netflix Responsive Website renewal</p>
+								</div>
+							</a>
+						</div>
+					</div><!-- Works -->
+					<div class="Tools">
+						<ul>
+							<li class="ps">
+								<p>photoshop</p>
+								<img src="data/ico_psd.png" alt="photoshop" width="40">
+							</li>
+							<li class="il">
+								<p>illustrator</p>
+								<img src="data/ico_ai.png" alt="illustrator" width="40">
+							</li>
+							<li class="ht">
+								<p>html5</p>
+								<img src="data/ico_html.png" alt="html5" width="40">
+							</li>
+							<li class="cs">
+								<p>css3</p>
+								<img src="data/ico_css.png" alt="css3" width="40">
+							</li>
+							<li class="js">
+								<p>JavaScript / jquery</p>
+								<img src="data/ico_js.png" alt="jquery,javasciept" width="40">
+							</li>
+						</ul>
+					</div><!-- tools -->
+				</div><!-- work -->
+				<div class="Contect">
+					<div class="ContectIn">
+						<p>010.5090.0653</p>
+						<p>nr.shin000@gmail.com</p>
+					</div>
+				</div>
+				<!-- <div class="Tools">
+					<ul>
+						<li class="ps">
+							<p>photoshop</p>
+							<img src="data/ico_psd.png" alt="photoshop" width="40">
+						</li>
+						<li class="il">
+							<p>illustrator</p>
+							<img src="data/ico_ai.png" alt="illustrator" width="40">
+						</li>
+						<li class="ht">
+							<p>html5</p>
+							<img src="data/ico_html.png" alt="html5" width="40">
+						</li>
+						<li class="cs">
+							<p>css3</p>
+							<img src="data/ico_css.png" alt="css3" width="40">
+						</li>
+						<li class="js">
+							<p>JavaScript</p>
+							<img src="data/ico_js.png" alt="jquery,javasciept" width="40">
+						</li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+</body>
+</html>
