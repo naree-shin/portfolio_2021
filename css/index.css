@@ -49,7 +49,7 @@ div.modalIn > p:nth-of-type(1) { font-size: 26px; }
 div.modalIn > p:nth-of-type(2) { font-size: 16px; line-height: 30px; }
 div.modalIn > p:nth-of-type(2)::after { content: ""; display: block; width: 20px; height: 2px; background: #555; margin: 0 auto; margin-top: 30px; }
 div.modalIn table { margin: 100px; text-align: left; }
-div.modalIn table tr {/* height: 30px;*/ }
+/* div.modalIn table tr {height: 30px; } */
 div.modalIn table th { width: 130px; font-size: 14px; padding: 5px 0; font-weight: bold;  }
 div.modalIn table td { font-size: 12px; vertical-align: middle; }
 td.color > p { display: inline-block; width: 70px; height: 70px; border-radius: 50%; color: #fff; line-height: 70px; text-align: center; margin: 10px 5px; }
@@ -132,16 +132,17 @@ div.Contact > h1 { text-align: center; font-size: 16px;  padding-top: 100px; }
 div.Contact > h1::after { content: ""; display: block; width: 20px; height: 1px; background: #787878; margin: 0 auto; margin-top: 15px; }
 div.ContactIn { display: inline-block; text-align: left;
 	/*position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%);*/ margin-top: 50px;}
-div.ContactIn > p:first-child::before { content: ""; display: inline-block; width: 25px; height: 25px; background: url("../img/phone.png")no-repeat; background-size: 100%; vertical-align: middle; margin-right: 10px; }
-div.ContactIn > p:last-child::before { content: ""; display: inline-block; width: 25px; height: 25px; background: url("../img/mail.png")no-repeat; background-size: 100%; vertical-align: middle; margin-right: 10px; }
+div.ContactIn > p:nth-of-type(1)::before { content: ""; display: inline-block; width: 25px; height: 30px; background: url('../img/phone.svg')center / contain no-repeat; vertical-align: middle; margin-right: 10px; }
+div.ContactIn > p:nth-of-type(2)::before { content: ""; display: inline-block; width: 25px; height: 25px; background: url("../img/mail.svg")center / 100% no-repeat; vertical-align: middle; margin-right: 10px; }
+div.ContactIn > p:nth-of-type(3)::before { content: ""; display: inline-block; width: 25px; height: 28px; background: url("../img/i_github.svg")center / 100% no-repeat; vertical-align: middle; margin-right: 10px; }
 div.ContactIn > p { margin: 10px 0; }
 div.ContactIn > p:first-child { letter-spacing: 1px; }
 div.Contact > img { display: block; margin: 250px auto 30px; }
 
-div.Tools { background: #eff4f7; padding: 100px 0; color: #787878;}
-div.Tools > h1 { text-align: center; font-size: 16px; margin-bottom: 50px; }
+div.Tools { background: #eff4f7; padding: 100px 0 200px; color: #787878;}
+div.Tools > h1 { text-align: center; font-size: 16px; margin-bottom: 100px; }
 div.Tools > h1::after { content: ""; display: block; width: 20px; height: 1px; background: #787878; margin: 0 auto; margin-top: 15px; }
-div.Tools > ul > li { display: block; font-size: 12px; width: 100%; text-align: center; margin-bottom: 10px; }
+/* div.Tools > ul > li { display: block; font-size: 12px; width: 100%; text-align: center; margin-bottom: 10px; }
 div.Tools > ul > li > img { margin-bottom: -3px; }
 div.Tools > ul > li > p { display: inline-block; width: 550px; height: 32px; border: 1px solid #787878; border-radius: 0 10px 10px 0; position: relative; text-align: right; line-height: 32px; padding-right: 15px; }
 div.Tools > ul > li > p > span { width: 2px; height: 33px; background:  #787878; color: #f2f8f3; position: absolute; top: 0; left: -1px; line-height: 32px; padding-right: 20px; transition: 1.5s ease-in; opacity: 0; }
@@ -149,7 +150,11 @@ div.Tools:hover > ul > li.ps > p > span { width: 400px; transition: 1s ease-out;
 div.Tools:hover > ul > li.il > p > span { width: 450px; transition: 1s ease-out; opacity: 1; }
 div.Tools:hover > ul > li.ht > p > span { width: 450px; transition: 1s ease-out; opacity: 1; }
 div.Tools:hover > ul > li.cs > p > span { width: 400px; transition: 1s ease-out; opacity: 1; }
-div.Tools:hover > ul > li.js > p > span { width: 200px; transition: 1s ease-out; opacity: 1; }
+div.Tools:hover > ul > li.js > p > span { width: 200px; transition: 1s ease-out; opacity: 1; } */
+div.Tools ul { display: flex; justify-content: center; }
+div.Tools ul li { padding: 0 15px; }
+div.Tools ul li img { height: 80px; max-width: 120px;}
+div.Tools ul li p { text-align: center; margin-top: 10px; font-weight: 600;}
 
 
 
