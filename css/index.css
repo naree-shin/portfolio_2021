@@ -59,6 +59,18 @@ div.go button { display: block; width: 100%; height: 650px; background: url("../
 a.close { display: block; text-align: center; padding-bottom: 100px; cursor: default; }
 /*a.go > p { font-size: 12px; line-height: 50px; }*/
 
+/*ichLinks*/
+div.ichLinks div.bg {background: url("../img/mockup_ichLinks.jpg") center top 65% no-repeat; background-size: cover; }
+div.ichLinks_modal button { background: url("../img/mockup_ichLinks.jpg") 100% / cover no-repeat; }
+
+/*abba*/
+div.abba div.bg {background: url("../img/thumb_abba.jpg") center no-repeat; background-size: cover; }
+div.abba_modal button { background: url("../img/mockup_abba.jpg") 100% / cover no-repeat; }
+
+/*ktvf2020*/
+div.ktvf div.bg {background: url("../img/mockup_ktvf2020.jpg") center no-repeat; background-size: cover; }
+/* a.go.ktvf { display: block; width: 100%; height: 100%; background: url("../img/mockup_ktvf2020.jpg") center no-repeat; padding-bottom: 500px; } */
+div.ktvf_modal button { background: url("../img/mockup_ktvf2020.jpg") 100% / cover no-repeat; }
 
 /*yddCI*/
 div.yddCI div.bg {background: url("../img/ydda_main.jpg") center no-repeat; background-size: cover; }
@@ -70,7 +82,7 @@ a.go.ydda { display: block; width: 100%; height: 100%; background: url("../img/y
 
 /*ydd*/
 div.ydd div.bg {background: url("../img/ydd_main02.jpg") center 60%/ 120% no-repeat; }
-div.ydd_modal div.modalIn { background: white; width: 1400px; margin: 100px auto 50px; text-align: center; padding: 150px 0 50px; }
+div.ydd_modal div.modalIn { background: white; width: 1400px; margin: 100px auto 50px; text-align: center; padding: 150px 0 200px; }
 
 
 /*yddm*/
@@ -148,7 +160,7 @@ div.Tools:hover > ul > li.js > p > span { width: 200px; transition: 1s ease-out;
 div.contentsList {
     width: 1200px;
     margin: 0 auto;
-    cursor: url(../img/pause03.png),auto;
+    /* cursor: url(../img/pause03.png),auto; */
    
 }
 div.contentsList img {
@@ -200,7 +212,7 @@ div.contentsList img {
 div.contentsList {
     width: 1200px;
     margin: 0 auto;
-    padding: 100px 0 150px;
+    padding: 0px 0 150px;
    
 }
 div.contentsList img {
