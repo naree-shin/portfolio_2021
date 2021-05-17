@@ -51,7 +51,7 @@ div.modalIn > p:nth-of-type(2)::after { content: ""; display: block; width: 20px
 div.modalIn table { margin: 100px; text-align: left; }
 /* div.modalIn table tr {height: 30px; } */
 div.modalIn table th { width: 130px; font-size: 14px; padding: 5px 0; font-weight: bold;  }
-div.modalIn table td { font-size: 12px; vertical-align: middle; }
+div.modalIn table td { font-size: 12px; vertical-align: middle; padding: 5px 0; }
 td.color > p { display: inline-block; width: 70px; height: 70px; border-radius: 50%; color: #fff; line-height: 70px; text-align: center; margin: 10px 5px; }
 
 div.go > p { font-size: 14px; line-height: 50px; }
@@ -101,6 +101,8 @@ a.go.ydda { display: block; width: 100%; height: 100%; background: url("../img/y
 /*ydd*/
 div.ydd div.bg {background: url("../img/ydd_main02.jpg") center 60%/ 120% no-repeat; }
 div.ydd_modal div.modalIn { background: white; width: 1400px; margin: 100px auto 50px; text-align: center; padding: 150px 0 200px; }
+div.ydd_modal .link { display: block; width: 100%; height: 100%; margin: 100px 0; transition: all 0.2s ease-in; }
+div.ydd_modal .link:hover { transform: scale(1.2); }
 
 
 /*yddm*/
@@ -109,6 +111,7 @@ a.go.yddm { display: block; width: 100%; height: 100%; background: url("../img/y
 
 /*yddAdmin*/
 div.yddAdmin div.bg {background: url("../img/yddAdmin.jpg") center no-repeat; background-size: cover; }
+div.yddAdmin_modal .link { background: url("../img/yddAdmin.jpg") 100% / cover no-repeat; }
 
 /*doosan*/
 div.ds div.bg { background: url("../img/doosan_web.jpg") center 45% / cover no-repeat; }
@@ -230,6 +233,33 @@ div.contentsList img {
     color: white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    height: 85vh;
+    margin-top: 5vh !important;
+    /* overflow: scroll !important;
+    text-align:center; */
+}
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 85vh;
+}
+.slick-slide {
+    display: none;
+    float: left;
+    height: auto !important;
+    min-height: 1px;
 }
 
 div.contentsList {
