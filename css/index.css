@@ -110,8 +110,8 @@ div.ydd_modal .link:hover { transform: scale(1.2); }
 a.go.yddm { display: block; width: 100%; height: 100%; background: url("../img/yddm_main.jpg") center / cover no-repeat; padding-bottom: 500px; }*/
 
 /*yddAdmin*/
-div.yddAdmin div.bg {background: url("../img/yddAdmin.jpg") center no-repeat; background-size: cover; }
-div.yddAdmin_modal .link { background: url("../img/yddAdmin.jpg") 100% / cover no-repeat; }
+div.yddAdmin div.bg {background: url("../img/yddadmin.jpg") center no-repeat; background-size: cover; }
+div.yddAdmin_modal .link { background: url("../img/yddadmin.jpg") 100% / cover no-repeat; }
 
 /*doosan*/
 div.ds div.bg { background: url("../img/doosan_web.jpg") center 45% / cover no-repeat; }
