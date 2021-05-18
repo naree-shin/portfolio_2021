@@ -214,13 +214,13 @@ div.contentsList img {
     z-index: 2;
 }
 .slick-prev::before {
-    content: ""; display: block; width: 47px; height: 21px; background: url("../../img/subSlide_prev2.png") no-repeat;
+    content: ""; display: block; width: 47px; height: 21px; background: url("./../img/subSlide_prev2.png") no-repeat;
 }
 .slick-prev {
     left: -47px;
 }
 .slick-next::before {
-    content: ""; display: block; width: 47px; height: 21px; background: url("../../img/subSlide_next2.png") no-repeat;
+    content: ""; display: block; width: 47px; height: 21px; background: url("./../img/subSlide_next2.png") no-repeat;
 }
 .slick-next {
     right: -47px;
